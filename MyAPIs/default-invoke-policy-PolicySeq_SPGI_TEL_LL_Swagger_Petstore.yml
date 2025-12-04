@@ -1,0 +1,20 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: default-invoke-policy-PolicySeq_SPGI_TEL_LL_Swagger_Petstore
+  namespace: MyAPIs
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  endpoint:
+    http:
+      target:
+        timeout: 30
+        url: https://petstore.swagger.io/v2
+      verb: CUSTOM
+  extensions:
+    webm-gateway:
+      apiVersion: api.ibm.com/v1

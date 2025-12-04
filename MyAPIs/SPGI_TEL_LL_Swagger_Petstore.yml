@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: SPGI_TEL_LL_Swagger_Petstore
+  namespace: MyAPIs
+  version: 1.0.7
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./SPGI_TEL_LL_Swagger_Petstore-spec.json
+  policy-sequence:
+    - $ref: MyAPIs:PolicySeq_SPGI_TEL_LL_Swagger_Petstore:1.0

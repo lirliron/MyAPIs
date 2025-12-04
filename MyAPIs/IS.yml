@@ -1,0 +1,11 @@
+kind: WebMethodsISService
+apiVersion: api.ibm.com/v1
+metadata:
+  name: IS
+  namespace: MyAPIs
+  version: "1.0"
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec: {}

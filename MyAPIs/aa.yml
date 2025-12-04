@@ -1,0 +1,11 @@
+kind: InboundMessaging
+apiVersion: api.ibm.com/v1
+metadata:
+  name: aa
+  namespace: MyAPIs
+  version: "1.0"
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec: {}
