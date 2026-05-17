@@ -1,0 +1,15 @@
+openapi: 3.0.1
+info:
+  title: APITitle
+  version: ''
+servers:
+  - url: http://www.example.com
+paths:
+  /time:
+    summary: ''
+    description: ''
+    get:
+      responses:
+        res:
+          description: ''
+      operationId: time

@@ -1,0 +1,20 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: default-invoke-policy-seq1
+  namespace: MyAPIs
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  endpoint:
+    http:
+      target:
+        timeout: 30
+        url: http://www.example.com
+      verb: CUSTOM
+  extensions:
+    webm-gateway:
+      apiVersion: api.ibm.com/v1
